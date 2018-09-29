@@ -10,10 +10,10 @@ public class countingchars {
 
         Scanner in = new Scanner(System.in);
 
-        String input = in.nextLine();
+        String input = in.nextLine().trim().replace(" ","");
         int count = input.length();
 
-        System.out.print(input + "has" + " " + count + " " + "characters.");
+        System.out.print(input + " has" + " " + count + " " + "characters.");
 
     }
 }
